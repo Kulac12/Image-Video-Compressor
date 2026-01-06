@@ -89,3 +89,94 @@ Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır.
 ---
 
 Sorularınız veya önerileriniz için [Issues](../../issues) sayfasını kullanabilirsiniz.
+# Image and Video Size Reducer
+
+Batch image and video size reduction tools. Get optimized file sizes for websites.
+
+## Features
+
+### Image Size Reducer
+- **Target Size**: 100-300 KB web optimization
+- **Batch Processing**: Process multiple files at once
+- **Drag & Drop**: Drop files directly onto the window
+- **Format Conversion**: Convert between JPEG, PNG, WebP
+- **Speed Settings**: Fast/Normal/Slow compression options
+- **Size Limiting**: Set maximum width/height
+- **Bilingual**: Turkish and English interface
+
+### Video Size Reducer
+- **Codec Support**: H.264, H.265 (HEVC), VP9
+- **Quality Control**: Fine-tune with CRF value
+- **Resolution Options**: 4K, 1080p, 720p, 480p, 360p
+- **Preset Selection**: ultrafast to veryslow speed/quality balance
+- **Audio Settings**: Bitrate control and audio removal options
+- **Bilingual**: Turkish and English interface
+
+## Installation
+
+### Using Ready-made Exe (Windows)
+1. Download the latest version from [Releases](../../releases)
+2. Run `Resim_Boyut_Kucult.exe` or `Video_Boyut_Kucult.exe`
+
+### Running from Source Code
+```bash
+# Install required libraries
+pip install -r requirements.txt
+
+# Run image tool
+python resim_sikistirici.py
+
+# Run video tool
+python video_sikistirici.py
+```
+
+### Additional Requirement for Video Tool
+[FFmpeg](https://ffmpeg.org/download.html) must be installed for Video Size Reducer.
+
+## Requirements
+
+- Python 3.8+
+- Pillow (for image processing)
+- FFmpeg (for video processing)
+- windnd (for drag & drop support, optional)
+
+## Usage
+
+### Image Size Reducer
+1. Click **Add Files** or **Add Folder** to select images (or drag & drop)
+2. Enable **Target Size** and set the KB range
+3. Optionally change output format and speed settings
+4. Click **START** button
+
+### Video Size Reducer
+1. Select video file
+2. Configure codec, resolution, and quality settings
+3. Click **START** button
+
+## Supported Formats
+
+### Image
+- JPEG (.jpg, .jpeg)
+- PNG (.png)
+- WebP (.webp)
+- BMP (.bmp)
+- TIFF (.tiff, .tif)
+
+### Video
+- MP4 (.mp4)
+- AVI (.avi)
+- MKV (.mkv)
+- MOV (.mov)
+- WebM (.webm)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Developer
+
+**Edanur KULAÇ**
+
+---
+
+For questions or suggestions, please use the [Issues](../../issues) page.
